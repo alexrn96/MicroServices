@@ -1,0 +1,6 @@
+@Module.Orders.Server_HostAddress = http://localhost:5159
+
+GET {{Module.Orders.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
