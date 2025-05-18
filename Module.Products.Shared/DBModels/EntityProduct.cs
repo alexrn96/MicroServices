@@ -5,5 +5,5 @@ public class EntityProduct
     public Guid Id { get; set; } = new Guid();
     public string Name { get; set; }
     public decimal Price { get; set; }  
-    public string AdditionalPropertyLocal { get; set; }
+    public string AdditionalPropertyLocalUpdateFromRemote { get; set; }
 }
