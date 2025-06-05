@@ -8,4 +8,6 @@ public class OrderDto
     public int Quantity { get; set; }
     public string Name { get; set; } = string.Empty;
     public decimal TotalPrice { get; set; }
+
+    //TODO checkto add new properties
 }
