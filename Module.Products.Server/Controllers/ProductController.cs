@@ -26,8 +26,16 @@ namespace Module.Products.Server.Controllers
         [HttpPost]
         public async Task<ActionResult<ProductDto>> SaveProduct(ProductDto product)
         {
-           // return await _productService.CreateProduct(product);
-           return await GenericControllerErrorHandling.RunServiceMethod(_productService.CreateProduct, product);
+            // return await _productService.CreateProduct(product);
+            return await GenericControllerErrorHandling.RunServiceMethod(_productService.CreateProduct, product);
+        }
+
+        [HttpGet]
+        public async Task<ActionResult<ProductDto>> GetProductById(int id)
+        {
+            //return await _productService.GetProductById(id);
+            //return await GenericControllerErrorHandling.RunServiceMethod(_productService.GetProductById, id);
+            return new ProductDto();
         }
     }
 }
