@@ -7,5 +7,6 @@ namespace Module.Products.Server.Controllers
     [ApiController]
     public class CategoryController : ControllerBase
     {
+      //agegar metdo para mapear lsas categorias con produdctos
     }
 }
